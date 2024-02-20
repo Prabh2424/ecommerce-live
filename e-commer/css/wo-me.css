@@ -1,0 +1,68 @@
+.wom-me-container {
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(0); /* Initially no blur */
+    transition: filter 0.3s ease; /* Smooth transition for filter */
+  }
+  
+  .wom-me-section {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Fixed height */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+  }
+  
+  .wom-me-section:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    z-index: 1; /* Bring to front on hover */
+  }
+  
+  .wom-me-section img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio and fill the space */
+    transition: filter 0.3s ease; /* Smooth transition for filter */
+  }
+  
+  .wom-me-section:hover img {
+    filter: brightness(80%); /* Reduce brightness on hover */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .wom-me-section:hover .text-overlay {
+    opacity: 0; /* Hide text on hover */
+  }
+  
+  .wom-me-hover-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0; /* Initially hidden */
+    transition: top 0.3s ease, opacity 0.3s ease; /* Smooth transition for position and opacity */
+  }
+  
+  .wom-me-section:hover .wom-me-hover-content {
+    display: block;
+    top: 40%; /* Move up */
+    opacity: 1; /* Show content on hover */
+  }
+  
+  .wom-me-hover-content button {
+    margin-top: 10px;
+  }

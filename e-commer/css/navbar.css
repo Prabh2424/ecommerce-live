@@ -1,0 +1,101 @@
+.navbar {
+    background-color: #fff; /* Navbar background color */
+    border-bottom: 2px solid #ccc; /* Border at the bottom of the navbar */
+  }
+  .navbar-brand {
+    margin-right: 10px; /* Margin to provide space between logo and hamburger */
+  }
+  .navbar-toggler {
+    margin-right: 0; /* Remove default margin */
+  }
+  .navbar-toggler-icon {
+    width: 20px; /* Adjust the width of the hamburger menu icon */
+    height: 20px; /* Adjust the height of the hamburger menu icon */
+  }
+  .navbar-nav {
+    margin-left: auto; /* Pushes the navbar items to the right */
+    display: flex;
+    align-items: center;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 20px; /* Margin between each navbar item */
+  }
+  .navbar-nav .nav-link {
+    color: #000; /* Navbar item color */
+  }
+  .search-field {
+    flex-grow: 1; /* Allow the search field to grow and fill the available space */
+    max-width: 200px; /* Set a maximum width to prevent it from becoming too wide */
+  }
+  
+  @media (max-width: 768px) {
+    .search-field {
+      max-width: none; /* Remove the maximum width constraint on smaller screens */
+      margin-right: 10px; /* Add margin to separate it from the icons */
+    }
+  }
+  
+  
+  .navbar-icons {
+    margin-left: 20px; /* Increase space between the icons and the search field */
+    display: flex;
+    align-items: center;
+  }
+  .navbar-icons .icon {
+    margin-right: 10px; /* Adjust space between the icons */
+  }
+  .navbar-icons .icon a {
+      color: inherit; /* Use the same color as the parent element */
+      text-decoration: none; /* Remove underline */
+  }
+  .divider-navbar {
+    height: 20px; /* Height of the divider line */
+    border-left: 1px solid #ccc; /* Border style */
+    margin: 0 10px; /* Adjust margin for the divider */
+  }
+
+
+  .sale-mark {
+    display: flex;
+    justify-content: flex-start;
+    background: #003049;
+    overflow: hidden;
+  }
+  .sale-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rtl 6000ms linear infinite;
+  }
+  @keyframes move-rtl {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+ 
+  /* navbar second */
+  .second-nav {
+      max-width: 100%;
+      overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  .links-container-nav {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      max-width: 100%; /* Set maximum width to 100% */
+      width: 900px; /* Set a fixed width for the container */
+      margin: 0 auto; /* Center the links container */
+      white-space: nowrap; /* Prevent line breaks */
+  }
+  .links-container-nav .nav-link {
+    display: inline-block; /* Ensure links stay in a single line */
+    padding: 0 20px; /* Adjust padding as needed */
+    margin-right: 10px; /* Adjust margin between links */
+}
+  .links-container-nav::-webkit-scrollbar {
+      display: none; /* Hide the scrollbar */
+  }

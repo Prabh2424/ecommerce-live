@@ -1,0 +1,14 @@
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#another-owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 10px;
+}
+

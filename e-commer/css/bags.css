@@ -1,0 +1,19 @@
+.bag {
+    display: inline-block;
+    background: linear-gradient(to right, #ff4e50, #f9d423, #4caf50, #1089ff, #8e44ad, #ff4e50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveColor 10s linear infinite;
+    background-size: 600% 100%;
+    overflow: hidden;
+  }
+
+  @keyframes moveColor {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
